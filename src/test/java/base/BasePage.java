@@ -14,14 +14,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.ConfigReader;
 import utils.Utilities;
 
-public class Base 
+public class BasePage 
 {
-	WebDriver driver;
-	public Properties prop = ConfigReader.intializeProperties();
+	static WebDriver driver;
+	public static Properties prop = ConfigReader.intializeProperties();
 	public Properties dataProp;
 
 	@BeforeMethod
-	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName)
+	public static WebDriver initializeBrowserAndOpenApplicationURL(String browserName)
 	{
 
 		if (browserName.equalsIgnoreCase("chrome")) 
@@ -56,5 +56,7 @@ public class Base
 
 		return driver;
 	}
+	
+	
 	
 }
