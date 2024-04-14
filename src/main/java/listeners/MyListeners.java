@@ -1,5 +1,6 @@
 package listeners;
 
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -12,10 +13,12 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
 import utils.ExtentReporter;
 import utils.Utilities;
 
-public class MyListeners implements ITestListener {
+public class MyListeners implements ITestListener 
+{
 	ExtentReports extentReport;
 	ExtentTest extentTest;
 
@@ -42,8 +45,8 @@ public class MyListeners implements ITestListener {
 	}
 
 	@Override
-	public void onTestFailure(ITestResult result) {
-		
+	public void onTestFailure(ITestResult result) 
+	{
 		WebDriver driver = null;
 		
 		try {
@@ -83,4 +86,5 @@ public class MyListeners implements ITestListener {
 		}
 		
 	}
+	
 }

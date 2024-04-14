@@ -18,14 +18,14 @@ public class ExtentReporter {
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
 		
 		sparkReporter.config().setTheme(Theme.DARK);
-		sparkReporter.config().setReportName("Test Automation Results Report");
-		sparkReporter.config().setDocumentTitle("Automation Report");
+		sparkReporter.config().setReportName("TutorialsNinja Test Automation Results Report");
+		sparkReporter.config().setDocumentTitle("TN Automation Report");
 		sparkReporter.config().setTimeStampFormat("dd/MM/yyyy hh:mm:ss");
 		
 		extentReport.attachReporter(sparkReporter);
 		
 		Properties configProp = new Properties();
-		File configPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+		File configPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\config\\config.properties");
 		
 		try {
 			FileInputStream fisConfigProp = new FileInputStream(configPropFile);
@@ -38,9 +38,6 @@ public class ExtentReporter {
 		extentReport.setSystemInfo("Browser Name",configProp.getProperty("browserName"));
 		extentReport.setSystemInfo("Email",configProp.getProperty("validEmail"));
 		extentReport.setSystemInfo("Password",configProp.getProperty("validPassword"));
-		extentReport.setSystemInfo("Operating System",System.getProperty("os.name"));
-		extentReport.setSystemInfo("Username",System.getProperty("user.name"));
-		extentReport.setSystemInfo("Java Version",System.getProperty("java.version"));
 		
 		return extentReport;
 	}

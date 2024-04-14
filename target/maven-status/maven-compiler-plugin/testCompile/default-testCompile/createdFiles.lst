@@ -1,0 +1,4 @@
+base\BasePage.class
+testcases\LoginTest.class
+testcases\RegisterTest.class
+testcases\SearchTest.class
