@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">11</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">108,198</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.LoginTest</td><td><a href="#m0">verifyLoginWithValidCredentials</a></td><td rowspan="1">1713076646589</td><td rowspan="1">10559</td></tr><tr class="failedodd"><td rowspan="1">testcases.SearchTest</td><td><a href="#m1">verifySearchWithInvalidProduct</a></td><td rowspan="1">1713076746177</td><td rowspan="1">288</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcases.SearchTest</td><td><a href="#m2">verifySearchWithoutAnyProduct</a></td><td rowspan="1">1713076746890</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testcases.LoginTest</td><td><a href="#m3">verifyLoginWithInvalidCredentials</a></td><td rowspan="1">1713076678953</td><td rowspan="1">546</td></tr><tr class="passedeven"><td><a href="#m4">verifyLoginWithInvalidEmailAndValidPassword</a></td><td rowspan="1">1713076686225</td><td rowspan="1">535</td></tr><tr class="passedeven"><td><a href="#m5">verifyLoginWithValidCredentials</a></td><td rowspan="2">1713076671847</td><td rowspan="2">610</td></tr><tr class="passedeven"><td><a href="#m6">verifyLoginWithValidCredentials</a></td></tr><tr class="passedeven"><td><a href="#m7">verifyLoginWithValidEmailAndInvalidPassword</a></td><td rowspan="1">1713076693535</td><td rowspan="1">609</td></tr><tr class="passedeven"><td><a href="#m8">verifyLoginWithoutProvidingCredentials</a></td><td rowspan="1">1713076700953</td><td rowspan="1">394</td></tr><tr class="passedodd"><td rowspan="4">testcases.RegisterTest</td><td><a href="#m9">verifyRegisteringAccountByProvidingAllFields</a></td><td rowspan="1">1713076716108</td><td rowspan="1">1029</td></tr><tr class="passedodd"><td><a href="#m10">verifyRegisteringAccountWithExistingEmailAddress</a></td><td rowspan="1">1713076723955</td><td rowspan="1">828</td></tr><tr class="passedodd"><td><a href="#m11">verifyRegisteringAccountWithoutFillingAnyDetails</a></td><td rowspan="1">1713076732783</td><td rowspan="1">529</td></tr><tr class="passedodd"><td><a href="#m12">verifyRegisteringAnAccountWithMandatoryFields</a></td><td rowspan="1">1713076708196</td><td rowspan="1">896</td></tr><tr class="passedeven"><td rowspan="1">testcases.SearchTest</td><td><a href="#m13">verifySearchWithValidProduct</a></td><td rowspan="1">1713076739502</td><td rowspan="1">378</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">testcases.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap9@gmail.com</td><td>12345</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Edit your account information&quot;}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19695c2662b4773aeb4d786500d8e147, findElement {value=Edit your account information, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\RUPESH~1.SUR\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64128/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19695c2662b4773aeb4d786500d8e147
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
+	at pages.AccountPage.getDisplayStatusOfEditYourAccountInformationOption(AccountPage.java:24)
+	at testcases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.SearchTest#verifySearchWithInvalidProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: No product message in search results is not displayed expected [abcd] but found [There is no product that matches the search criteria.]
+	at testcases.SearchTest.verifySearchWithInvalidProduct(SearchTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.SearchTest#verifySearchWithoutAnyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method testcases.SearchTest.verifySearchWithoutAnyProduct() on instance testcases.SearchTest@5e316c74 depends on not successfully finished methods 
+[testcases.SearchTest.verifySearchWithValidProduct() on instance testcases.SearchTest@5e316c74
+testcases.SearchTest.verifySearchWithInvalidProduct() on instance testcases.SearchTest@5e316c74]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoginTest#verifyLoginWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.LoginTest#verifyLoginWithInvalidEmailAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap3@gmail.com</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.LoginTest#verifyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>amotooricap1@gmail.com</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.LoginTest#verifyLoginWithValidEmailAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.LoginTest#verifyLoginWithoutProvidingCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.RegisterTest#verifyRegisteringAccountByProvidingAllFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.RegisterTest#verifyRegisteringAccountWithExistingEmailAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.RegisterTest#verifyRegisteringAccountWithoutFillingAnyDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testcases.RegisterTest#verifyRegisteringAnAccountWithMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testcases.SearchTest#verifySearchWithValidProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -6,13 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import base.BasePage;
+import base.Base;
 import pages.AccountSuccessPage;
 import pages.HomePage;
 import pages.RegisterPage;
 import utils.Utilities;
 
-public class RegisterTest extends BasePage {
+public class RegisterTest extends Base {
 	
 	RegisterPage registerPage;
 	AccountSuccessPage accountSuccessPage;
